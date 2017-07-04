@@ -1,0 +1,28 @@
+{
+  "name": "tar-filter-stream",
+  "description": "PassThrough stream that only lets through tar archives",
+  "repository": "yoshuawuyts/tar-filter-stream",
+  "version": "1.0.0",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "start": "node .",
+    "test": "standard && npm run deps"
+  },
+  "dependencies": {
+    "is-tar": "^1.0.0",
+    "peek-stream": "^1.1.2",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.9.1",
+    "standard": "^10.0.2",
+    "tape": "^4.7.0"
+  },
+  "keywords": [
+    "tar",
+    "stream",
+    "passthrough",
+    "gzip"
+  ],
+  "license": "MIT"
+}
