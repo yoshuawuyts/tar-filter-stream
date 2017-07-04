@@ -2,7 +2,7 @@
 [![npm version][2]][3] [![build status][4]][5]
 [![downloads][8]][9] [![js-standard-style][10]][11]
 
-PassThrough stream that only lets through tar archives
+PassThrough stream that only lets through tar archives. Works for `.tgz` too!
 
 ## Usage
 ```js
@@ -14,7 +14,7 @@ pump(process.stdin, tarFilterStream(), process.stdout)
 
 ## API
 ### `stream = tarFilterStream()`
-Create a new filter stream.
+Create a new filter stream that filters out all non-tar streams.
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
